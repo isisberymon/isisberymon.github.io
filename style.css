@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,ul {
+  list-style: none;
+}
+blockquote,q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* custom css */
+html {
+  background-color: #fff4ed;
+  cursor: url("gallery/cursor.png"), default;
+  overflow-x: hidden;
+}
+
+a:hover, button:hover { 
+  cursor: url("gallery/cursor-hover.png"), default;
+}
+
+h1 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #303030;
+  line-height: 125%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height:150%;
+  color: #303030;
+}
+
+p {
+  font-family: "Akshar", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #303030;
+  margin-bottom:1rem;
+}
+
+p a{
+  text-decoration: underline;
+}
+
+footer{
+  padding-top:200px;
+  padding-bottom:1rem;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #7a7a7a;
+  text-align: center;
+  line-height: 150%;
+  background: url("gallery/footer.gif");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+main {
+  margin:2rem;
+}
+
+/*landing page*/
+div.mobile {
+  display: none;
+}
+div.welcome {
+  width: 100vw;
+  height: 60vw;
+  background: url("gallery/homebgtop.gif");
+  background-repeat: no-repeat;
+  background-size:100vw;
+}
+
+div.welcome h1 {
+  position: relative;
+  top: 35%;
+  left: 25%;
+}
+
+div.gallery {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
+figure {
+  padding: 1rem;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure.got-internet img {
+  background:url("gallery/thumbnail/got-internet.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.got-internet:hover img {
+  background:url("gallery/thumbnail/got-internet-hover.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.artificial-autism img {
+  background:url("gallery/thumbnail/artificial-autism.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.artificial-autism:hover img {
+  background:url("gallery/thumbnail/artificial-autism-hover.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.stuco img {
+  background:url("gallery/thumbnail/stuco.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.stuco:hover img {
+  background:url("gallery/thumbnail/stuco-hover.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.design-hero img {
+  background:url("gallery/thumbnail/design-hero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figure.design-hero:hover img {
+  background:url("gallery/thumbnail/design-hero-hover.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+figcaption {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  color: #303030;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+div.about {
+  width:60%;
+  margin:auto;
+  margin-top: 10rem;
+  display:flex;
+  justify-content: center;
+}
+
+div.about div {
+  width:70%;
+  padding-left:3rem;
+}
+
+div.about img {
+  width:30%;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #fff4ed;
+  color: #303030;
+  text-align: center;
+  border: 2px solid #303030;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem 0 0;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+/*project pages*/
+
+/*title*/
+nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+nav img {
+  width: 30px;
+  height: auto;
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+
+div.hero img {
+  width:100%;
+  height: auto;
+}
+
+div.title {
+  width:60%;
+  margin:auto;
+  margin-top:3rem;
+}
+
+div.title_desc {
+  display:flex;
+  width:100%;
+}
+
+div.title p {
+  margin-right: 3rem;
+  width: 30vw;
+}
+
+h3{
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height:225%;
+  color: #303030;
+}
+
+/*project content*/
+div.project {
+  width:60%;
+  margin:auto;
+  margin-top:5rem;
+}
+
+h4{
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #303030;
+  margin-top:3rem;
+  margin-bottom:1rem;
+}
+
+div.project img{
+  width:100%;
+  height:auto;
+  margin-bottom:2rem;
+}
+
+div.video {
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+
+div.video iframe {
+  width:100%;
+}
+
+div.project_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:auto;
+}
+
+div.project_gallery img {
+  max-width: 100%;
+  height: 100%;
+}
+
+
+
+/*mobile layout*/
+@media screen and (max-width:600px) {
+  div.welcome{
+    display:none;
+  }
+
+  div.mobile {
+    display: block;
+    padding: 3rem;
+  }
+
+  figure {
+    width: 100%;
+  }
+
+  div.about {
+    display: block;
+    width:100%;
+  }
+
+  div.about img {
+    width:80%;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  div.about div{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+
+  footer{
+    background: none;
+  }
+}
