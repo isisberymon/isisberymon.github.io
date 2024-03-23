@@ -333,6 +333,7 @@ div.project_gallery img {
 
   div.gallery {
     width:100%;
+    margin:auto;
     display: block;
     align-content: center;
   }
