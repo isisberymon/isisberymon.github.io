@@ -331,8 +331,14 @@ div.project_gallery img {
     margin: 1rem;
   }
 
+  div.gallery {
+    width:100%;
+    display: block;
+    align-content: center;
+  }
+
   figure {
-    width: 100%;
+    max-width: 100%;
   }
 
   div.about {
