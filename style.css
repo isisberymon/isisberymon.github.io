@@ -98,6 +98,7 @@ main {
 div.mobile {
   display: none;
 }
+
 div.welcome {
   width: 100vw;
   height: 60vw;
@@ -324,6 +325,12 @@ div.project_gallery img {
     padding: 3rem;
   }
 
+  nav img {
+    width: 30px;
+    height: auto;
+    margin: 1rem;
+  }
+
   figure {
     width: 100%;
   }
@@ -347,5 +354,35 @@ div.project_gallery img {
 
   footer{
     background: none;
+    padding-top: 50px;
   }
+
+  div.project {
+    width:75%;
+  }
+
+  div.title {
+    width:80%;
+    margin-top: 1rem;
+  }
+
+  div.title_desc {
+    width:100%;
+    display:block;
+  }
+
+  div.title p {
+    width: 100%
+  }
+
+  div.video {
+    margin-top:2rem;
+    margin-bottom: 2rem;
+  }
+
+  div.video iframe {
+    width:100%;
+    height:100%;
+  }
+
 }
