@@ -35,6 +35,21 @@ table {
 
 
 /* custom css */
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5e6dc;
+}
+::-webkit-scrollbar-thumb {
+  background: #9f958f; 
+  border-radius: 8px;
+}
+
+/*cursor*/
 html {
   background-color: #fff4ed;
   cursor: url("gallery/cursor.png"), default;
@@ -63,9 +78,9 @@ h2 {
 }
 
 p {
-  font-family: "Akshar", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 350;
+  font-size: 20px;
   line-height: 120%;
   color: #303030;
   margin-bottom:1rem;
@@ -77,14 +92,14 @@ p a{
 
 footer{
   padding-top:200px;
-  padding-bottom:1rem;
+  padding-bottom:2rem;
   font-family: "Unbounded", sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: #7a7a7a;
   text-align: center;
   line-height: 150%;
-  background: url("gallery/footer.gif");
+  background: url("gallery/footer.webp");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -101,7 +116,7 @@ div.mobile {
 
 div.welcome {
   width: 100vw;
-  height: 60vw;
+  height: 20vw;
   background: url("gallery/homebgtop.webp");
   background-repeat: no-repeat;
   background-size:100vw;
@@ -125,6 +140,7 @@ figure {
   padding: 1rem;
   max-width: 50%;
   box-sizing: border-box;
+  transition: transform .5s;
 }
 
 figure img {
@@ -132,66 +148,24 @@ figure img {
   height: auto;
 }
 
-figure.got-internet img {
-  background:url("gallery/thumbnail/got-internet.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.got-internet:hover img {
-  background:url("gallery/thumbnail/got-internet-hover.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.artificial-autism img {
-  background:url("gallery/thumbnail/artificial-autism.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.artificial-autism:hover img {
-  background:url("gallery/thumbnail/artificial-autism-hover.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.stuco img {
-  background:url("gallery/thumbnail/stuco.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.stuco:hover img {
-  background:url("gallery/thumbnail/stuco-hover.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.design-hero img {
-  background:url("gallery/thumbnail/design-hero.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figure.design-hero:hover img {
-  background:url("gallery/thumbnail/design-hero-hover.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-figcaption {
+/*caption style*/
+h5 {
   font-family: "Unbounded", sans-serif;
   font-weight: 400;
+  font-size: 1rem;
+  line-height:225%;
   color: #303030;
-  margin-top: 1rem;
-  text-align: center;
+}
+
+figure:hover {
+  transform: scale(.95);
+  font-style: italic;
 }
 
 div.about {
   width:60%;
   margin:auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
   display:flex;
   justify-content: center;
 }
@@ -218,6 +192,11 @@ button {
   border-radius: 25px;
   padding: 0.5rem 1rem;
   margin: 1rem 1rem 0 0;
+  transition: transform .5s;
+}
+
+button:hover {
+  transform: scale(.95);
 }
 
 a {
@@ -246,7 +225,7 @@ div.hero img {
 }
 
 div.title {
-  width:60%;
+  width:80%;
   margin:auto;
   margin-top:3rem;
 }
@@ -258,7 +237,7 @@ div.title_desc {
 
 div.title p {
   margin-right: 3rem;
-  width: 30vw;
+  width: 50%;
 }
 
 h3{
@@ -271,7 +250,7 @@ h3{
 
 /*project content*/
 div.project {
-  width:60%;
+  width:80%;
   margin:auto;
   margin-top:5rem;
 }
@@ -284,6 +263,10 @@ h4{
   margin-top:3rem;
   margin-bottom:1rem;
 }
+
+/*div.project p{
+  max-width: 80%;
+}*/
 
 div.project img{
   width:100%;
@@ -298,6 +281,7 @@ div.video {
 
 div.video iframe {
   width:100%;
+
 }
 
 /*two column grid*/
@@ -307,12 +291,15 @@ div.project_gallery_2 {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 div.project_gallery_2 img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom:0;
 }
 
 /*3 column grid*/
@@ -322,12 +309,15 @@ div.project_gallery_3 {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 6px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 div.project_gallery_3 img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: 0;
 }
 
 /*one column grid lol????*/
