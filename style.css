@@ -136,6 +136,13 @@ div.gallery {
   align-content: space-around;
 }
 
+div.gallery_ongoing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+}
+
 figure {
   padding: 1rem;
   max-width: 50%;
@@ -146,6 +153,7 @@ figure {
 figure img {
   width: 100%;
   height: auto;
+  border-radius: 50px;
 }
 
 /*caption style*/
@@ -195,6 +203,15 @@ button {
   transition: transform .5s;
 }
 
+button.toggle {
+  align: center;
+}
+
+button:active {
+  background-color: #303030;
+  color: #fff4ed;
+}
+
 button:hover {
   transform: scale(.95);
 }
@@ -222,6 +239,8 @@ nav img {
 div.hero img {
   width:100%;
   height: auto;
+  border-bottom-left-radius:75px;
+  border-bottom-right-radius:75px;
 }
 
 div.title {
@@ -314,6 +333,24 @@ div.project_gallery_3 {
 }
 
 div.project_gallery_3 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+/*4 column grid*/
+div.project_gallery_4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  gap: 6px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+div.project_gallery_4 img {
   width: 100%;
   height: auto;
   object-fit: cover;
