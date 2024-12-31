@@ -392,6 +392,10 @@ img.wide {
     max-width: 100%;
   }
 
+  figure img {
+    border-radius: 30px;
+  }
+
   div.about {
     display: block;
     width:100%;
@@ -417,11 +421,16 @@ img.wide {
   }
 
   div.project {
-    width:75%;
+    width:95%;
+  }
+
+  div.hero img {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 
   div.title {
-    width:80%;
+    width:95%;
     margin-top: 1rem;
   }
 
