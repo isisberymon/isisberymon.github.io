@@ -81,7 +81,7 @@ p {
   font-family: "Overpass", sans-serif;
   font-weight: 350;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 150%;
   color: #303030;
   margin-bottom:1rem;
 }
@@ -136,11 +136,21 @@ div.gallery {
   align-content: space-around;
 }
 
-div.gallery_ongoing {
+div.filters {
+  background-color: #fff4ed;
+  padding-bottom:1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
+  top:0;
+  position:sticky;
+  z-index: 1;
+}
+
+.filters h5{
+  margin-top:1rem;
+  margin-right:1rem;
 }
 
 figure {
@@ -148,6 +158,7 @@ figure {
   max-width: 50%;
   box-sizing: border-box;
   transition: transform .5s;
+  display:block;
 }
 
 figure img {
@@ -274,20 +285,28 @@ div.project {
   margin-top:5rem;
 }
 
-h4{
+h4 {
   font-family: "Unbounded", sans-serif;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #303030;
   margin-top:3rem;
   margin-bottom:1rem;
+  text-align: right;
+  margin-right:62%;
 }
 
+div.project p{
+  margin-left:40%;
+}
 
 div.project img{
   width:100%;
   height:auto;
-  margin-bottom:2rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+  border: 2px solid #9f9790;
+  border-radius: 25px;
 }
 
 div.video {
@@ -297,7 +316,8 @@ div.video {
 
 div.video iframe {
   width:100%;
-
+  border: 2px solid #707070;
+  border-radius: 25px;
 }
 
 /*two column grid*/
@@ -306,9 +326,9 @@ div.project_gallery_2 {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   grid-auto-flow: dense;
-  gap: 5px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  gap: 25px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 div.project_gallery_2 img {
@@ -324,9 +344,9 @@ div.project_gallery_3 {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-auto-flow: dense;
-  gap: 6px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  gap: 25px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 div.project_gallery_3 img {
@@ -343,8 +363,8 @@ div.project_gallery_4 {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   gap: 6px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 div.project_gallery_4 img {
@@ -376,6 +396,10 @@ img.wide {
     width: 30px;
     height: auto;
     margin: 1rem;
+  }
+
+  div.filters{
+    display:none;
   }
 
   div.gallery {

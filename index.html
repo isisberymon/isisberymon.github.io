@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>welcome</title>
+    <link rel="icon" type="image/x-icon" href="gallery/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500&family=Unbounded:wght@200;300;400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="script.js" type="text/javascript"></script>
   </head>
   <body>
     <a id="top"></a>
@@ -22,26 +24,17 @@
       <p> my website is best viewed on desktop! it'll still work at this size, but it'll look even cooler on your computer. trust me. happy scrolling :D</p>
     </div>
     <!-- gallery of work -->
-    <!-- <div class="gallery">
-      <button class="toggle" onclick="togglelement()" id="toggle">
-      Toggle Work in Progress
-      </button>
-      <script>
-        function togglelement() {
-            const work = document.
-                getElementById('ongoing');
-            if (work.style.display === 'none') {
-                work.style.display = "flex";
-            }
-            else {
-                work.style.display = "none"
-            }
-        }
-      </script>
-    </div> -->
+    <div class="filters">
+      <h5>project filters:</h5>
+      <button onclick="showAll()">all work</button>
+      <button onclick="filterBy('brand')">brand</button>
+      <button onclick="filterBy('print')">print</button>
+      <button onclick="filterBy('digital')">digital</button>
+      <button onclick="filterBy('fun')">fun</button>
+    </div>
     <div class="gallery">
-      <figure>
-        <a href="shuttles.html"><img src="gallery/thumbnail/shuttle.png" /></a>
+      <figure class="brand">
+        <a href="shuttles.html"><img src="gallery/thumbnail/shuttle.gif" /></a>
         <div>
           <h5>cmu shuttles reimagined</h5>
           <p>in progress, wayfinding, brand extension, print, web</p>
@@ -54,54 +47,55 @@
           <p>publication design, design system</p>
         </div>
       </figure> -->
-      <figure>
-        <a href="kcon.html"><img src="gallery/thumbnail/kcon.png" /></a>
+      <!-- every figure is an individual project thumbnail -->
+      <figure class="brand">
+        <a href="kcon.html"><img src="gallery/thumbnail/kcon.gif" /></a>
         <div>
           <h5>kcon la 2024 reimagined</h5>
-          <p>brand identity, design system, print, digital, motion</p>
+          <p>brand identity, print, social media, motion</p>
         </div>
       </figure>
-        <figure>
+      <figure class="digital fun">
         <a href="prtcc.html"><img src="gallery/thumbnail/prtcc.png" /></a>
         <div>
           <h5>the commute calculator</h5>
           <p>in progress, data vizualization</p>
         </div>
       </figure>
-      <figure>
+      <figure class="fun">
         <a href="bohzarts.html"><img src="gallery/thumbnail/bohzarts.png" /></a>
         <div>
           <h5>bohzarts: a cmu typeface</h5>
           <p>in progress, type design, experimental type</p>
         </div>
       </figure>
-      <figure>
+      <figure class="brand">
         <a href="stuco.html"><img src="gallery/thumbnail/stuco.png" /></a>
         <div>
           <h5>cmu student college</h5>
-          <p> creative direction, brand identity, print, digital </p>
+          <p>creative direction, brand identity, print</p>
         </div>
       </figure>
-      <figure>
+      <figure class="print">
         <a href="artificial-autism.html"><img src="gallery/thumbnail/artificial-autism.png" /></a>
         <div>
           <h5>artificial autism</h5>
           <p>design system, nonlinear storytelling, print</p>
         </div>
       </figure>
-      <figure>
+      <figure class="brand print digital">
         <a href="design-hero.html"><img src="gallery/thumbnail/design-hero.png" /></a>
         <div>
           <h5>my design hero: paul soulellis</h5>
           <p>design system, print, web, motion</p>
         </div>
       </figure>
-      <figure>
+      <figure class="digital">
         <a href="got-internet.html">
           <img src="gallery/thumbnail/got-internet.png"/> </a>
         <div>
           <h5>got internet?</h5>
-          <p>design system, print, motion</p>
+          <p>design system, motion, print</p>
         </div>
       </figure>
     </div>
@@ -109,9 +103,9 @@
       <div class="about">
         <img src="gallery/about.png" alt="one picture of me and one picture of a bbyongming plush" />
         <div>
-          <h4> isis (they/them)</h4>
+          <h5>isis (they/them)</h5>
           <p>
-            I currently study communications design at CMU with an interest in brand identities and data viz. I'm most interested in designing for public services and helping people get to resources they need, especially in my hometown Pittsburgh.
+            I'm a designer with an interest in how good brand identities can serve communities and improve their quality of life. I have a deep love for the people and places of Pittsburgh, which is where I'm from and currently stationed in.
           </p>
           <p>
             Feel free to reach out via email or LinkedIn! I love talking about design, public transit, and music. 
@@ -130,7 +124,7 @@
     </main>
     <footer>
        <a href="#top"> scroll to top.</a><br>
-      updated december 2024. built with html/css. hosted on github.
+      updated may 2025. built with html/css. hosted on github.
     </footer>
   </body>
 </html>
